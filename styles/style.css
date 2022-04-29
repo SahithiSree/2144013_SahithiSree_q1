@@ -1,8 +1,8 @@
-.header-container {
-    height: 80px;
+header {
     width: 100%;
     display: flex;
     background: rgb(246, 247, 250);
+    padding: 20px 0;
 }
 
 .content {
@@ -18,31 +18,20 @@
 }
 
 .menu {
-    margin-top: 10px;
     display: inline;
     width: 50%;
+    text-align: center;
 }
 
-
-.menu ul {
-    display: flex;
-    justify-content: center;
+.menu a {
+    padding: 10px 20px;
 }
 
-.menu li {
-    display: inline;
-    list-style-type: none;
-    padding-right: 30px;
-}
-
-.menu li:hover {
-    border: 2px solid #1768ff;
+.menu a:hover {
+    border: 1px solid #1768ff;
     color: #1768ff;
     border-radius: 50px;
-    height: 20px;
-    padding-left: 30px;
     cursor: pointer;
-    margin-right: 3px;
 }
 
 .home-banner {
@@ -62,6 +51,7 @@
     font: 28px Helvetica;
     font-weight: 100;
     letter-spacing: 0.5mm;
+    margin: 10px 0;
 }
 
 .p2 {
@@ -70,9 +60,10 @@
     margin: 0;
 }
 
-.desc {
+.description {
     color: #8e8e8e;
     font-size: 15px;
+    line-height: 20px;
 }
 
 
@@ -109,11 +100,11 @@
 
 @media screen and (min-width:999px) and (max-width:1280px) {
     .sub-title span {
-        left: 38% !important;
+        left: 40% !important;
     }
 
     .sub-title2 span {
-        left: 36% !important;
+        left: 38% !important;
 
     }
 }
@@ -152,7 +143,7 @@
     margin: 10px auto;
 }
 
-.service {
+.individual-service {
     padding: 15px 50px;
 }
 
@@ -161,7 +152,7 @@
     font: 15px bolder Arial, sans-serif;
 }
 
-.service:hover {
+.individual-service:hover {
     background-color: #1768ff;
     color: white;
     cursor: pointer;
@@ -171,7 +162,6 @@
 
 
 .service-title::after {
-    /* position: absolute; */
     display: block;
     content: '';
     margin: 1rem auto;
@@ -180,7 +170,7 @@
     background-color: #1768ff;
 }
 
-.service:hover .service-title::after {
+.individual-service:hover .service-title::after {
     background-color: white;
 }
 
@@ -196,26 +186,22 @@
     background-image: url('../images/icon3.jpg');
 }
 
-.service:hover .service1 {
+.individual-service:hover .service1 {
     background-image: url('../images/icon-1-hover.png');
 }
 
-.service:hover .service2 {
+.individual-service:hover .service2 {
     background-image: url('../images/icon-2.png');
 }
 
-.service:hover .service3 {
+.individual-service:hover .service3 {
     background-image: url('../images/icon3-hover.png');
 }
 
-.service:hover .p3 {
+.individual-service:hover .p3 {
     color: white;
 }
 
-/* .service-icon {
-    width: 30px;
-    height: 30px;
-} */
 .portfolio {
     background: rgb(246, 247, 250);
 
@@ -236,7 +222,6 @@
     color: white;
     text-align: center;
     padding: 80px 30px;
-    /* display: none; */
     visibility: hidden;
 }
 
@@ -276,7 +261,6 @@
 }
 
 .branding::after {
-    /* position: absolute; */
     display: block;
     content: '';
     margin: 1rem auto;
@@ -292,7 +276,6 @@
 .portfolio4:hover,
 .portfolio5:hover,
 .portfolio6:hover {
-    /* visibility: hidden; */
     background-image: url('../images/bg.png');
     cursor: pointer;
 
